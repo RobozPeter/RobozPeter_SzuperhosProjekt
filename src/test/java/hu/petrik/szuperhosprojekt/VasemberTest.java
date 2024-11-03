@@ -43,11 +43,11 @@ class VasemberTest {
     @Test
     void testToString()
     {
-        assertEquals("Vasember: Szupererő: 150; van gyengesége", vasember.toString());
+        assertEquals("Vasember: Szupererő: 150,00; van gyengesége", vasember.toString());
         vasember.setSzuperero(200);
-        assertEquals("Vasember: Szupererő: 200; van gyengesége", vasember.toString());
+        assertEquals("Vasember: Szupererő: 200,00; van gyengesége", vasember.toString());
         vasember.setVanEGyengesege(false);
-        assertEquals("Vasember: Szupererő: 200; nincs gyengesége", vasember.toString());
+        assertEquals("Vasember: Szupererő: 200,00; nincs gyengesége", vasember.toString());
     }
 
     @Test

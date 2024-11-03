@@ -86,11 +86,11 @@ class BosszualloTest {
 
     @Test
     void testToString() {
-        assertEquals("Szupererő: 300; van gyengesége", bosszuallo.toString());
+        assertEquals("Szupererő: 300,00; van gyengesége", bosszuallo.toString());
         bosszuallo.setSzuperero(200);
-        assertEquals("Szupererő: 200; van gyengesége", bosszuallo.toString());
+        assertEquals("Szupererő: 200,00; van gyengesége", bosszuallo.toString());
         bosszuallo.setVanEGyengesege(false);
-        assertEquals("Szupererő: 200; nincs gyengesége", bosszuallo.toString());
+        assertEquals("Szupererő: 200,00; nincs gyengesége", bosszuallo.toString());
     }
 
     @Test

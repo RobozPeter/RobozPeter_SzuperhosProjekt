@@ -2,6 +2,8 @@ package hu.petrik.szuperhosprojekt;
 
 import org.junit.jupiter.api.Test;
 
+import static org.junit.jupiter.api.Assertions.*;
+
 class BatmanTest {
     private class SzuperhosMock implements Szuperhos
     {
@@ -55,8 +57,8 @@ class BatmanTest {
 
     @Test
     void testToString() {
-        assertEquals("Batman: leleményesség: 100", batman.toString());
+        assertEquals("Batman: leleményesség: 100,00", batman.toString());
         batman.kutyutKeszit();
-        assertEquals("Batman: leleményesség: 150", batman.toString());
+        assertEquals("Batman: leleményesség: 150,00", batman.toString());
     }
 }
