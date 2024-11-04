@@ -39,6 +39,7 @@ public abstract class Bosszuallo implements Szuperhos {
     public boolean legyoziE(Szuperhos szuperhos) {
         if (szuperhos instanceof Bosszuallo) {
             Bosszuallo bosszuallo = (Bosszuallo) szuperhos;
+
             if (bosszuallo.isVanEGyengesege()) {
                 return this.szuperero > bosszuallo.getSzuperero();
             }
@@ -46,7 +47,7 @@ public abstract class Bosszuallo implements Szuperhos {
 
         if (szuperhos instanceof Batman) {
             Batman batman = (Batman) szuperhos;
-            return this.szuperero > batman.mekkoraAzEreje();
+            return this.szuperero >= batman.mekkoraAzEreje()*2;
 
         } return false;
     }
