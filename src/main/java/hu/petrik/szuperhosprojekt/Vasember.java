@@ -51,8 +51,8 @@ public class Vasember extends Bosszuallo implements Milliardos {
     @Override
     public String toString() {
         if (this.isVanEGyengesege()) {
-            return String.format("Vasember: Szupererő: %.2f; van gyengesége", Math.round(this.getSzuperero()*100)/100.0);
+            return String.format("Vasember: Szupererő: %d; van gyengesége", Math.round(this.getSzuperero()));
         }
-        return String.format("Vasember: Szupererő: %.2f; nincs gyengesége", Math.round(this.getSzuperero()*100)/100.0);
+        return String.format("Vasember: Szupererő: %d; nincs gyengesége", Math.round(this.getSzuperero()));
     }
 }

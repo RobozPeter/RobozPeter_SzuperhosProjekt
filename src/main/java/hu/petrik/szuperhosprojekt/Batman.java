@@ -27,7 +27,7 @@ public class Batman implements Milliardos, Szuperhos {
 
         @Override
         public String toString() {
-            return String.format("Batman: leleményesség: %.2f",  Math.round(this.lelemenyseg*100)/100.0);
+            return String.format("Batman: leleményesség: %d",  Math.round(this.lelemenyseg));
         }
 
 

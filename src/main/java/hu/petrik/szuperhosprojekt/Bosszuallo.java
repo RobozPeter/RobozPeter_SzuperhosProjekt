@@ -30,9 +30,9 @@ public abstract class Bosszuallo implements Szuperhos {
     @Override
     public String toString() {
         if (vanEGyengesege) {
-            return String.format("Szupererő: %.2f; van gyengesége", Math.round(szuperero*100)/100.0);
+            return String.format("Szupererő: %d; van gyengesége", Math.round(szuperero));
         }
-        return String.format("Szupererő: %.2f; nincs gyengesége", Math.round(szuperero*100)/100.0);
+        return String.format("Szupererő: %d; nincs gyengesége", Math.round(szuperero));
     }
 
     @Override

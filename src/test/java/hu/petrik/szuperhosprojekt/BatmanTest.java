@@ -57,8 +57,8 @@ class BatmanTest {
 
     @Test
     void testToString() {
-        assertEquals("Batman: leleményesség: 100,00", batman.toString());
+        assertEquals("Batman: leleményesség: 100", batman.toString());
         batman.kutyutKeszit();
-        assertEquals("Batman: leleményesség: 150,00", batman.toString());
+        assertEquals("Batman: leleményesség: 150", batman.toString());
     }
 }

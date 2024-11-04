@@ -28,8 +28,8 @@ class KepregenyTest {
     void szuperhosok()
     {
         Kepregeny.szuperhosLista = new ArrayList<>(List.of(new Vasember(),new Batman()));
-        String expected = "Vasember: Szupererő: 150,00; van gyengesége"
-                + System.lineSeparator() + "Batman: leleményesség: 100,00"
+        String expected = "Vasember: Szupererő: 150; van gyengesége"
+                + System.lineSeparator() + "Batman: leleményesség: 100"
                 + System.lineSeparator();
 
         ByteArrayOutputStream baos = new ByteArrayOutputStream();
